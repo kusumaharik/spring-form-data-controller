@@ -17,11 +17,11 @@ The method is defined as “POST” and is set to accept a “AccountForm” obj
 
 Note: Applicable for 1st way
 
-2)
-public String submit(
+2) public String submit(
   @Valid @ModelAttribute("employee") Employee employee,
   BindingResult result,
   ModelMap model)
+  
 The BindingResult argument needs to be positioned right after our form backing object – it's one of the rare cases where the order of the method arguments matters. Otherwise, we'll run into the following exception:
 
 java.lang.IllegalStateException: 
