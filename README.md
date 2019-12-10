@@ -16,6 +16,7 @@ Points to remember :
 The method is defined as “POST” and is set to accept a “AccountForm” object, there is no need to annotate the object, by default Spring will compare the form fields with the class fields, if they don’t match then it throws a “400 Bad Request” error.
 
 Note: Applicable for 1st way
+
 2)
 public String submit(
   @Valid @ModelAttribute("employee") Employee employee,
